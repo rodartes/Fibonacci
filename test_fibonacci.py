@@ -9,5 +9,20 @@ class TestSeq(unittest.TestCase):
   def testSeq(self):
     self.assertEqual(fibonacci.fun(9), 34)
 
+#pytest
+
+def test_base():
+  x = 0
+  assert fibonacci.fun(x) == 0
+  assert fibonacci.fun(x+1) == 1
+
+def test_sum():
+  x = 2
+  assert fibonacci.fun(x) == 1
+
+def test_seq():
+  x = 8
+  assert fibonacci.fun(x) == 21
+
 if __name__ == '__main__':
   unittest.main()
