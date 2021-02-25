@@ -1,4 +1,4 @@
-#implementation
+#implementation - fibonacci sequence
 
 def fun(x):
   if x == 0:
@@ -8,3 +8,12 @@ def fun(x):
   else:
     return fun(x-2) + fun(x-1)
 
+#implementation - factorials
+
+def fact(x):
+  if x == 1 or x == 0:
+    return 1;
+  elif x < 0:
+    return "error"
+  else:
+    return x * fact(x-1)
