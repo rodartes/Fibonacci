@@ -7,7 +7,7 @@ class TestSeq(unittest.TestCase):
   def testSum(self):
     self.assertEqual(fibonacci.fun(1)+fibonacci.fun(2), 2)
   def testSeq(self):
-    self.assertEqual(fibonacci.fun(10), 34)
+    self.assertEqual(fibonacci.fun(9), 34)
 
 if __name__ == '__main__':
   unittest.main()
